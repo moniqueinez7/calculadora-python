@@ -1,67 +1,53 @@
-## Sobre o projeto
-Minha primeira aplicação em Python, desenvolvida como parte do Desafio 1 de programação com Inteligência Artificial.
+# Calculadora em Python
 
-## Funcionalidades
-- Adição
-- Subtração
-- Multiplicação
-- Divisão
+## 1. Sobre o projeto
 
-## Objetivo
-Praticar lógica de programação, variáveis, funções e condições.
+Este projeto foi desenvolvido como parte do Desafio 1: Criando minha primeira aplicação com IA.
 
-## Tecnologia
-Python
+O objetivo foi criar uma calculadora simples em Python, utilizando o Google AI Studio como apoio na geração e compreensão do código.
 
-Criar uma calculadora é um dos melhores projetos para quem está começando a
-programar!
+## 2. Funcionalidades
 
-Abaixo está um código limpo, comentado e fácil de entender, seguido da
-explicação detalhada de cada parte (incluindo o tratamento de divisão por zero).
+A calculadora realiza as quatro operações matemáticas básicas:
 
+- Adição (+)
+- Subtração (-)
+- Multiplicação (*)
+- Divisão (/)
 
-## -m;fExplicação dos Principais Componentes
+## 3. Explicação dos principais componentes
 
-1. Funções (def)
+### Funções
+Organizam o código em partes menores, permitindo executar cada operação matemática separadamente.
 
-Funções são pequenos blocos de código reaproveitáveis criados com a palavra def.
+### Variáveis
+Armazenam os valores informados pelo usuário e as informações necessárias para realizar os cálculos.
 
-  - Elas recebem dados de entrada chamados parâmetros (no nosso caso, a e b).
-  - A instrução return envia de volta o resultado do cálculo para onde a função
-    foi chamada.
+### Entrada de dados
+Permite que o usuário informe os números e escolha a operação desejada.
 
-2. Tratamento da Divisão por Zero
+### Estruturas condicionais
+As estruturas `if`, `elif` e `else` verificam qual operação foi escolhida e determinam qual cálculo será executado.
 
-Na matemática e na computação, dividir um número por zero é uma operação
-indefinida. Se tentarmos fazer a / 0 no Python diretamente, o programa trava e
-exibe o erro ZeroDivisionError.
+### Operadores matemáticos
+São utilizados para realizar os cálculos:
+- `+` Adição
+- `-` Subtração
+- `*` Multiplicação
+- `/` Divisão
 
-  - Como resolvemos: Usamos uma verificação simples dentro da função dividir:
-    if b == 0:
-        return "Erro: Divisão por zero não é permitida!"
-    Isso garante que, se o segundo número for 0, o programa responde de forma
-    amigável sem fechar inesperadamente.
+### Exibição dos resultados
+Apresenta na tela o resultado da operação realizada.
 
-3. Entrada de Dados (input() e float())
+## 4. Como a aplicação funciona?
 
-  - input(...): Lê o que o usuário digita no teclado. Qualquer coisa lida por
-    padrão chega como texto (string).
-  - float(...): Converte o texto digitado em um número decimal (com casas
-    decimais). Se usássemos apenas input(), "5" + "5" resultaria em "55" (junção
-    de textos), e não 10. O float garante que possamos calcular tanto números
-    inteiros (ex: 2, 10) quanto quebrados (ex: 4.5, 3.14).
+Primeiro, o usuário informa os números que deseja utilizar. Em seguida, escolhe a operação matemática. O programa identifica a escolha, executa o cálculo correspondente e apresenta o resultado.
 
-4. Controle de Fluxo (if, elif, else)
+## 5. Aprendizado
 
-  - if opcao in ['1', '2', '3', '4']: Garante que o programa só pedirá os
-    números se o usuário digitou uma opção válida.
-  - elif (abreviação de else if): Permite testar várias condições em sequência
-    ("se for 1 faz isso, senão se for 2 faz aquilo...").
-  - else: É o caminho padrão caso nenhuma das condições anteriores seja atendida
-    (ex: se o usuário digitar "9" ou uma letra).
+Com este desafio, comecei a compreender como a Inteligência Artificial pode auxiliar no desenvolvimento de software e como conceitos básicos de programação, como variáveis, funções e condições, são utilizados na construção de uma aplicação.
 
-5. Formatação de Texto (f-strings)
+## 6. Tecnologia utilizada
 
-Ao usar um f antes das aspas (ex: f"Resultado: {num1} + {num2} = ..."), podemos
-colocar variáveis diretamente dentro do texto usando chaves { }, tornando o
-código mais legível e organizado.
+- Python
+- Google AI Studio
